@@ -1,0 +1,69 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=15;
+TAXLABELS
+[1] 'tr|A0A2H4A2U9|A0A2H4A2U9_NAEFO'
+[2] 'tr|L8GJB3|L8GJB3_ACACF'
+[3] 'sp|Q7Z1V1|CP51_TRYCC'
+[4] 'tr|Q385E8|Q385E8_TRYB2'
+[5] 'sp|P10613|CP51_CANAL'
+[6] 'sp|P14263|CP51_CANTR'
+[7] 'sp|P50859|CP51_CANGA'
+[8] 'sp|A0A0L1JEW4|RSTN2_ASPN3'
+[9] 'sp|E9QY26|CP51B_ASPFU'
+[10] 'tr|A0A229YLJ3|A0A229YLJ3_9EURO'
+[11] 'tr|A0A397GDY2|A0A397GDY2_ASPTH'
+[12] 'tr|A0A5M9MB85|A0A5M9MB85_9EURO'
+[13] 'sp|Q9SAA9|CP511_ARATH'
+[14] 'sp|Q16850|CP51A_HUMAN'
+[15] 'sp|Q64654|CP51A_RAT'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=15 nsplits=39;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 13,
+	99	 2 13,
+	100	 3,
+	100	 4,
+	100	 3 4,
+	100	 5,
+	100	 6,
+	100	 5 6,
+	100	 7,
+	100	 5 6 7,
+	100	 8,
+	100	 12,
+	100	 8 12,
+	100	 9,
+	100	 11,
+	25	 9 11,
+	100	 10,
+	100	 9 10 11,
+	100	 8 9 10 11 12,
+	100	 1 2 3 4 13 14 15,
+	100	 14,
+	100	 15,
+	100	 14 15,
+	92	 1 2 3 4 13,
+	37	 1 2 13,
+	100	 1,
+	50	 1 3 4,
+	64	 10 11,
+	5	 2 13 14 15,
+	11	 9 10,
+	12	 2 3 4 13,
+	3	 1 2 13 14 15,
+	0	 2 3 4,
+	0	 3 4 13,
+	0	 1 2 3 4,
+	0	 1 2,
+	0	 1 3 4 13,
+	0	 2 3 4 13 14 15,
+;
+END; [Splits]
+
