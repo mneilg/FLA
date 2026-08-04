@@ -1,0 +1,17 @@
+name: vina
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - libboost
+  - sphinx_rtd_theme
+  - sphinx
+  - swig
+  - numpy
+  - boost-cpp
+  - pymol-open-source
+  - meeko
+  - jupyterlab
+  - pdbfixer
+prefix: /home/nikka/miniconda3/envs/vina
